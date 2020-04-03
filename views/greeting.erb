@@ -7,6 +7,8 @@
   <title>Birthday App</title>
 </head>
 <body>
-  <h1><%= @name %></h1>
+  <% if @differnce = 0 %>
+    <h1>Happy Birthday, <%= @name %>!</h1>
+  <% end %>
 </body>
 </html>

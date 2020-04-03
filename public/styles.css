@@ -3,6 +3,11 @@ html, body {
   font-family: Helvetica;
   margin: 0;
   height: 100%;
+  color: rgb(48, 48, 48);
+  font-size: 25px;
+}
+h1 {
+  color: black;
 }
 body {
   display: table;
@@ -16,3 +21,4 @@ body > span {
 div {
   padding: 10px;
 }
+

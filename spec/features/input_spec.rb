@@ -4,4 +4,11 @@ feature 'Index page loads' do
     expect(page).to have_content "Hello there!"
   end
 
+  scenario 'with ability to enter name' do
+    visit '/'
+    fill_in :name, with: 'Faye'
+    click_button 'Go!'
+    expect(page).to have_content "Faye"
+  end
+
 end

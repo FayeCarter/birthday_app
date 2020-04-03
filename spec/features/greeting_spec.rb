@@ -22,4 +22,10 @@ feature 'Greeting page loads' do
     end
   end
   
+  scenario 'with happy birthday greeting if birthday' do
+    pretend_now_is(2020,"apr",6,20) do
+      fill_details
+      expect(page).to have_content "Your bithday is tomorrow, Faye!"
+    end
+  end
 end

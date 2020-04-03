@@ -9,6 +9,8 @@
       <h1>Happy Birthday, <%= @name %>!</h1>
     <% elsif @message > 1 %>
       <h1>Your bithday is in <%= @message %> days, <%= @name %>!</h1>
+    <% else %>
+      <h1>Your bithday is tomorrow, <%= @name %>!</h1>
     <% end %>
   </span>
 </body>

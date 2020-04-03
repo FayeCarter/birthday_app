@@ -17,7 +17,7 @@ The user submits the form, and depending on the current date, the app will eithe
 # To run the birthday_app
 rrackup -p 9393     
 
-# To run in browser
+# Open in browser
 http://localhost:9393/
 
 ```

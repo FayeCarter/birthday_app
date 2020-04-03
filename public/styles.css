@@ -1,5 +1,6 @@
 html, body {
   background-color: lightblue;
+  font-family: Helvetica;
   margin: 0;
   height: 100%;
 }
@@ -11,4 +12,7 @@ body > span {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+}
+div {
+  padding: 10px;
 }

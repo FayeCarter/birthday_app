@@ -13,4 +13,10 @@ describe Calculator do
     expect(calculator.birthday).to be_a(Date)
   end
   
+  describe '#difference' do
+    it 'finds the difference between date and birthday' do
+      calculator.date = Date.parse("4/3")
+      expect(calculator.difference). to eq 4
+    end
+  end
 end

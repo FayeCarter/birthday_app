@@ -7,6 +7,11 @@ class Calculator
     @birthday = Date.parse(date)
   end
 
-  attr_reader :date, :birthday
+  attr_accessor :date, :birthday
+
+  def difference
+    diff = @birthday - @date
+    diff.to_i
+  end
 
 end

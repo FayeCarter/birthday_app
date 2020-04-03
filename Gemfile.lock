@@ -31,6 +31,7 @@ GEM
       rack-protection (= 2.0.8.1)
       tilt (~> 2.0)
     tilt (2.0.10)
+    time-warp (1.0.15)
     xpath (3.2.0)
       nokogiri (~> 1.8)
 
@@ -40,6 +41,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   sinatra
+  time-warp
 
 BUNDLED WITH
    2.1.2

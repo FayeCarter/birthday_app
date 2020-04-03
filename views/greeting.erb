@@ -7,8 +7,10 @@
   <title>Birthday App</title>
 </head>
 <body>
-  <% if @differnce = 0 %>
+  <% if @message == 0 %>
     <h1>Happy Birthday, <%= @name %>!</h1>
+  <% elsif @message > 1 %>
+    <h1>Your bithday is in <%= @message %> days, <%= @name %>!</h1>
   <% end %>
 </body>
 </html>

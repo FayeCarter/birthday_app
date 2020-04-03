@@ -16,9 +16,10 @@ feature 'Greeting page loads' do
   end
 
   scenario 'with happy birthday greeting if birthday' do
-    fill_details
-    allow(Date).to receive(:today).and_return Date.new(2020,4,3)
-    expect(page).to have_content "Your bithday is in 4 days, Faye!"
+    pretend_now_is(2020,"apr",3,20) do
+      fill_details
+      expect(page).to have_content "Your bithday is in 4 days, Faye!"
+    end
   end
   
 end

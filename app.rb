@@ -18,7 +18,6 @@ class Birthday < Sinatra::Base
   get '/greeting' do
     @calculator = Calculator.new(session[:input])
     @message = @calculator.difference
-    p @message
     @name = session[:name]
     erb :greeting
   end

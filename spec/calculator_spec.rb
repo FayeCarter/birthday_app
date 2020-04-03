@@ -18,5 +18,10 @@ describe Calculator do
       calculator.date = Date.parse("4/3")
       expect(calculator.difference). to eq 4
     end
+
+    it 'finds the difference between date and birthday if birthday has already happend in the year' do
+      calculator.date = Date.parse("4/8")
+      expect(calculator.difference). to eq 364
+    end
   end
 end

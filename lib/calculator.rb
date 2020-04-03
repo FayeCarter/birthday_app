@@ -10,8 +10,8 @@ class Calculator
   attr_accessor :date, :birthday
 
   def difference
-    diff = @birthday - @date
-    diff.to_i
+    diff = (@birthday - @date).to_i
+    diff < 0 ? diff += 365 : diff
+    diff
   end
-
 end

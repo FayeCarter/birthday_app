@@ -15,4 +15,9 @@ feature 'Index page loads' do
     visit '/'
     expect(page).to have_field 'day'
   end
+
+  scenario 'with ability to enter birth month' do
+    visit '/'
+    expect(page).to have_field 'month'
+  end
 end

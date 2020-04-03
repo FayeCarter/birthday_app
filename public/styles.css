@@ -1,3 +1,14 @@
-body {
+html, body {
   background-color: lightblue;
+  margin: 0;
+  height: 100%;
+}
+body {
+  display: table;
+  width: 100%;
+}
+body > span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }

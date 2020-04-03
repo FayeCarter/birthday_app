@@ -6,9 +6,7 @@ feature 'Index page loads' do
 
   scenario 'with ability to enter name' do
     visit '/'
-    fill_in :name, with: 'Faye'
-    click_button 'Go!'
-    expect(page).to have_content "Faye"
+    expect(page).to have_field 'name'
   end
 
   scenario 'with ability to enter birthday' do

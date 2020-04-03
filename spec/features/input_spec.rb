@@ -11,4 +11,8 @@ feature 'Index page loads' do
     expect(page).to have_content "Faye"
   end
 
+  scenario 'with ability to enter birthday' do
+    visit '/'
+    expect(page).to have_field 'day'
+  end
 end
